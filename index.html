@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="place-search">
+        <div class="form-search">
+            <h3 class="search-item">Enter id or coordinates</h3>
+            <label class="search-item" for="input-id">ID</label>
+            <input class="search-item" type="text" class="input-id" id="input-id" placeholder="id">
+            <button class="search-item btn-search" type="button" id="get-id">Search</button>
+        </div>
+        <div class="coordinates form-search">
+            <label class="search-item">Coordinates</label>
+            <input class="search-item" type="text" id="coordinates-latitude" placeholder="latitude">
+            <input class="search-item" type="text" id="coordinates-longitude" placeholder="longitude">
+            <button class="search-item btn-search" type="button" id="get-coordinates">Search</button>
+        </div>
+    </div>
+    <div id="place-information">
+        <div>
+            <a href="" id="place-facebook" class="place-link" target="_blank" class="place-information">Facebook Page</a>
+            <p id="place-name" class="place-information"></p>
+            <p id="place-country" class="place-information"></p>
+            <p id="place-city" class="place-information"></p>
+            <p id="place-street" class="place-information"></p>
+            <p id="place-category" class="place-information"></p>
+        </div>
+        <div id="map"></div> 
+    </div>
+    <p id="no-place"></p>
+    <div id="loader"></div>
+    <script src="./js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcKBWLO7dzmoSDGt1N3iW7udI4x_s9W4s&callback=initMap" async defer></script>
+</body>
+</html>

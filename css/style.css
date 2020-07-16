@@ -1,0 +1,82 @@
+body{
+  background: rgba(136, 189, 233, 0.473);
+}
+#loader {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+    margin: auto;
+    margin-top: 200px;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  #map { 
+    height: 400px; 
+    width: 100%; 
+   }
+   
+   .place-information{
+     font-family:"Gill Sans", sans-serif;
+     font-size: 16px;
+     border-bottom: 1px solid #5481db79 ;
+     margin-top: 10px;
+     width: 300px;
+     display: flex;
+     justify-content: center;
+     margin: auto;
+   }
+
+   .form-search{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+   }
+
+ .search-item{
+  margin:5px auto;
+ }
+
+ .place-link{
+   font-size: 24px;
+   border: none;
+   color: #4267B2;
+ }
+
+ .place-link:visited{
+   color:#4267B2;
+ }
+
+ .place-link:hover{
+   background:#4267B2;
+   color:white;
+ }
+ 
+ input{
+   border: 1px solid gray;
+   border-radius: 5px;
+   height: 20px;
+ }
+
+ #place-facebook{
+   margin-left: 45%;
+ }
+
+ .btn-search{
+   color: white;
+   background: #4267B2;
+   padding: 5px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer; 
+ }
+
+ #no-place{
+   text-align: center;
+ }
